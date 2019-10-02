@@ -1,5 +1,6 @@
 # bewegendpapier
 Workshop bewegend papier
 
-Installation instructions:
+Digistump installation instructions:
 http://digistump.com/wiki/digispark/tutorials/connecting
+
