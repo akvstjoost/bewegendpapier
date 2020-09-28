@@ -3,11 +3,10 @@ Servo servo1;
 Servo servo2;
 int _pos1=0;
 int _pos2=0;
-int servo2Pos=0;
 
 void setup() {
-  servo1.attach(2);  // attaches the servo on pin 9 to the servo objevoct
-  servo2.attach(3);  // attaches the servo on pin 9 to the servo objevoct
+  servo1.attach(2);
+  servo2.attach(3);
 }
 
 void loop() {
