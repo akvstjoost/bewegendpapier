@@ -1,3 +1,5 @@
+//template for workshop Bewegend papier
+//by Thomas Rutgers - Techlab St. Joost School of Art & Design
 #include <Servo.h>
 Servo servo1;
 Servo servo2;
@@ -15,7 +17,6 @@ void loop() {
 }
 
 void moveServos(int pos1,int pos2,int time) {
-
   int loops = time / 20;
   if (loops < 1) loops=1;
   int start1 = _pos1;
@@ -25,9 +26,8 @@ void moveServos(int pos1,int pos2,int time) {
   for (int l=0;l<loops;l++) {
     servo1.write(calcPos(l,loops,start1,stop1));
     servo2.write(calcPos(l,loops,start2,stop2));
-    delay(20);        // waits 20ms for refresh period 
+    delay(20); 
   }
-
     _pos1 = pos1;
     _pos2 = pos2;
 }
